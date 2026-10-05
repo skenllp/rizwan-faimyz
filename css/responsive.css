@@ -1,0 +1,378 @@
+/* ===== TABLET: 900px ===== */
+@media (max-width: 900px) {
+  #hero {
+    justify-content: center;
+  }
+
+  .hero-photo {
+    width: 100%;
+  }
+
+  .hero-photo img {
+    object-position: center 20%;
+  }
+  
+  /* Make hero background more vibrant on mobile */
+  .hero-bg-image img {
+    filter: sepia(0%) saturate(120%) brightness(1.1) contrast(1.15);
+    object-position: center 25%;
+  }
+  
+  /* Add light overlay for text readability on tablet */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.15) 0%,
+      rgba(0,0,0,0.25) 50%,
+      rgba(0,0,0,0.35) 100%
+    );
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-left: 0;
+    max-width: 620px;
+  }
+
+  .hero-divider {
+    justify-content: center;
+  }
+
+  .hero-date {
+    display: block;
+  }
+
+  /* Events: already stacked, just adjust padding */
+  .event-item {
+    padding: 36px 28px;
+  }
+  
+  .event-info-card {
+    padding: 24px 24px;
+  }
+  
+  .event-number {
+    font-size: 72px;
+  }
+
+  .couple-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .couple-divider-center {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .couple-divider-center .vline {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+  }
+
+  .parents-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .timeline::before {
+    left: 24px;
+    background: linear-gradient(to bottom, transparent, var(--gold-soft), transparent);
+  }
+
+  .timeline-item {
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-text {
+    text-align: left;
+    order: 0;
+  }
+
+  .timeline-item:nth-child(even) .timeline-text {
+    grid-column: auto;
+  }
+
+  .timeline-item:nth-child(even) .timeline-empty {
+    display: none;
+  }
+
+  .timeline {
+    padding: 0 0 0 12px;
+  }
+
+  /* Gallery: 2-column on tablet */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Regards: stack to single column */
+  .regards-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .regards-divider {
+    width: 80px;
+    height: 1px;
+    min-height: unset;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 8px auto;
+    align-self: auto;
+  }
+
+  .regards-col {
+    padding: 28px 16px;
+  }
+
+  .regards-heading::before,
+  .regards-heading::after {
+    width: 28px;
+  }
+}
+
+/* MOBILE: 480px */
+@media (max-width: 480px) {
+  .nav {
+    padding: 16px 20px;
+  }
+
+  #hero {
+    min-height: 100svh;
+  }
+  
+  /* Extra vibrant on small mobile screens */
+  .hero-bg-image img {
+    filter: sepia(0%) saturate(125%) brightness(1.15) contrast(1.2);
+    object-position: center 30%;
+  }
+  
+  /* Add proper overlay for text readability on mobile */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.3) 0%,
+      rgba(0,0,0,0.4) 30%,
+      rgba(0,0,0,0.5) 60%,
+      rgba(0,0,0,0.6) 100%
+    );
+  }
+  
+  /* Add subtle vignette for additional text contrast */
+  .hero-vignette {
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      rgba(0,0,0,0.15) 60%,
+      rgba(0,0,0,0.3) 100%
+    );
+  }
+
+  .hero-content {
+    padding: 20px 16px 40px;
+  }
+
+  /* Enhanced text shadows for mobile readability */
+  .hero-label {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6);
+  }
+  
+  .hero-welcoming {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.6);
+  }
+  
+  .hero-name-bride,
+  .hero-name-groom {
+    text-shadow: 0 4px 16px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.7);
+  }
+  
+  .hero-and {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.8), 0 0 25px rgba(0,0,0,0.6);
+  }
+  
+  .hero-date-text,
+  .hero-date-number {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7);
+  }
+
+  #bismillah-section,
+  #opening,
+  #couple,
+  #events,
+  #countdown,
+  #quote-section,
+  #love-story,
+  #gallery,
+  #rsvp,
+  #regards,
+  #parents {
+    padding: 80px 16px;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .countdown-box {
+    padding: 24px 12px;
+  }
+
+  .countdown-number {
+    font-size: clamp(36px, 10vw, 56px);
+  }
+
+  .event-card {
+    padding: 36px 20px;
+  }
+
+  .couple-card {
+    padding: 36px 20px;
+  }
+
+  footer {
+    padding: 60px 16px 32px;
+  }
+
+  .opening-couple-photo {
+    max-width: 100%;
+  }
+
+  .maps-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .rsvp-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ornament-line {
+    width: 50px;
+  }
+
+  /* Gallery: single column on mobile */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+
+  /* Invitation message */
+  .invitation-message {
+    padding: 32px 20px;
+  }
+
+  /* Regards */
+  .regards-heading::before,
+  .regards-heading::after {
+    display: none;
+  }
+}
+
+/* ===== EXTRA SMALL: 360px ===== */
+@media (max-width: 360px) {
+  .hero-name-bride,
+  .hero-name-groom {
+    font-size: 44px;
+  }
+
+  .hero-and {
+    font-size: 28px;
+  }
+
+  .countdown-grid {
+    gap: 10px;
+  }
+
+  .regards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== SHORT VIEWPORTS: avoid scroll-hint overlapping hero text ===== */
+@media (max-height: 700px) {
+  .hero-scroll-hint {
+    display: none;
+  }
+}
+
+/* ===== MOBILE (Rizwan & Faimyz) ===== */
+@media (max-width: 600px) {
+  #invitation, #events, #countdown, #quote-section, #gallery, #regards { padding-left: 16px; padding-right: 16px; }
+  #invitation.has-florals, #events.has-florals { padding-top: 130px; }
+  .has-florals::before { height: 110px; }
+  .event-item { padding: 32px 20px; }
+  .event-info-card { padding: 20px 16px; }
+  .event-info-row { gap: 14px; }
+  .gallery-grid { grid-template-columns: 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
+  .gallery-item { aspect-ratio: 4 / 5; }
+  .ornament-line { width: 56px; }
+  #mute-btn { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+}
+@media (max-height: 700px) {
+  .gate-content { padding: 26px 24px 24px; }
+  .bp-top-label { margin-bottom: 12px; }
+  .bp-monogram { width: 84px; height: 84px; margin-bottom: 10px; }
+  .bp-monogram-names { font-size: 17px; }
+  .bp-bride-name { margin-bottom: 10px; }
+  .bp-subtitle { margin-bottom: 8px; }
+  .bp-date { margin-bottom: 14px; }
+  .bp-btn { padding: 15px 24px; }
+  .hero-content { padding: 40px 16px 50px; }
+}
+
+/* gallery images always fill their frame (overrides the older fixed-height rules above) */
+.gallery-item img { height: 100%; }
+
+/* ===== Photo backgrounds: neutral image treatment + burgundy veils (final word over earlier mobile rules) ===== */
+.hero-bg-image img, .gate-image img { filter: saturate(105%) brightness(.95) contrast(1.02); }
+.gate-image img { filter: saturate(105%) contrast(1.04); }
+.gate-overlay { background: linear-gradient(180deg, rgba(74,16,32,.20) 0%, rgba(74,16,32,.26) 50%, rgba(42,15,24,.35) 100%); }
+.hero-overlay { background: linear-gradient(180deg, rgba(42,15,24,.18) 0%, rgba(74,16,32,.52) 32%, rgba(74,16,32,.66) 62%, rgba(42,15,24,.82) 100%); }
+.hero-vignette { background: radial-gradient(ellipse at center, transparent 40%, rgba(42,15,24,.35) 100%); }
+.hero-bg-image img { object-position: center top; }
+.gate-image img { object-position: center 40%; }
+.hero-overlay { background: linear-gradient(180deg, rgba(42,15,24,.42) 0%, rgba(74,16,32,.55) 30%, rgba(74,16,32,.68) 60%, rgba(42,15,24,.84) 100%); }
+.hero-label:not(.hero-label-sub) { color: #F3E6B8; text-shadow: 0 1px 3px rgba(42,15,24,.9), 0 2px 14px rgba(42,15,24,.8); font-weight: 600; }
+.hero-label-sub { text-shadow: 0 1px 3px rgba(42,15,24,.9), 0 2px 14px rgba(42,15,24,.8); }
+
+/* ===== Ported sections — responsive ===== */
+@media (max-width: 768px) {
+  #bismillah-section { padding: 64px 20px; }
+  #parents { padding: 80px 16px; }
+  #parents.has-florals { padding-top: 140px; }
+  .parents-grid { grid-template-columns: 1fr; gap: 28px; padding: 0; }
+  .parents-card { padding: 38px 22px 32px; }
+  .parents-photo-circle { width: 150px; height: 150px; }
+  #our-story { padding: 90px 18px; }
+  .our-story-photo { margin-top: 40px; }
+  #wishes-wall, #rsvp, #contact { padding: 80px 16px; }
+  .wishes-form-container { padding: 26px 18px; }
+  .wish-item { padding: 18px 16px; gap: 12px; }
+  .wish-avatar { width: 42px; height: 42px; font-size: 16px; }
+  .contact-card { padding: 20px 18px; gap: 16px; }
+  .contact-icon { width: 44px; height: 44px; font-size: 17px; }
+}
+@media (max-width: 380px) {
+  .rsvp-attend-toggle { flex-direction: column; }
+  .wishes-submit-btn, .rsvp-btn { width: 100%; justify-content: center; padding-left: 18px; padding-right: 18px; }
+  .parents-photo-circle { width: 132px; height: 132px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .our-story-bg-pattern { animation: none !important; }
+}
+@media (max-width: 420px) { .regards-names { white-space: normal; } }
